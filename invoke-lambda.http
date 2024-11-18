@@ -1,0 +1,10 @@
+### Invoke the Investment Lambda Function
+POST http://localhost:4566/2015-03-31/functions/InvestmentLambda/invocations
+Content-Type: application/json
+X-Amz-CLI-Binary-Format: raw-in-base64-out
+
+{
+  "initial_amount": 1000,
+  "rate": 5,
+  "periods": 12
+}
